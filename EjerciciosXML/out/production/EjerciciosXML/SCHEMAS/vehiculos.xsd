@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.yisus.net/xml"
+           targetNamespace="http://www.yisus.net/xml">
+  <xs:element name="vehiculos" type="vehiculosType"/>
+  <xs:complexType name="vehiculosType">
+    <xs:sequence>
+      <xs:element type="vehiculoType" name="vehiculo" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="vehiculoType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nombre" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element type="xs:string" name="modelo" maxOccurs="1"/>
+      <xs:element type="fabricacionType" name="fabricacion" maxOccurs="1"/>
+      <xs:element type="modificacionesType" name="modificaciones"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="inicioType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="dia"/>
+      <xs:element type="xs:string" name="mes"/>
+      <xs:element type="xs:string" name="anyo"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="finType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="dia"/>
+      <xs:element type="xs:string" name="mes"/>
+      <xs:element type="xs:string" name="anyo"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="fabricacionType">
+    <xs:sequence>
+      <xs:element type="inicioType" name="inicio"/>
+      <xs:element type="finType" name="fin"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="modificacionesType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="modificacion" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

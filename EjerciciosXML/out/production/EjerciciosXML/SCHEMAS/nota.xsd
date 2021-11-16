@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.yisus.net/xml"
+           targetNamespace="http://www.yisus.net/xml">
+  <xs:element name="nota" type="notaType"/>
+  <xs:complexType name="notaType">
+    <xs:sequence>
+      <xs:element type="xs:string" name="para" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="xs:string" name="de" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="xs:string" name="titulo" minOccurs="1" maxOccurs="1"/>
+      <xs:element type="xs:string" name="contenido" minOccurs="1" maxOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>

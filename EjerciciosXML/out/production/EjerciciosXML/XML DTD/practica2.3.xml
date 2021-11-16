@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE editorial SYSTEM "D:\Escuela\UNI\DS III\IntelJ\EjerciciosXML\src\XML DTD\editorial.dtd">
+<editorial>
+    <head>
+        <nombre>Ediciones Aranda</nombre>
+        <titulo>Informe regional de ventas</titulo>
+        <descripcion>informe de ventas para las regiones Norte, Centro y Sur</descripcion>
+        <fecha date="30/09/2021"> 30/09/2021 </fecha>
+    </head>
+    <body>
+        <ventas>
+            <region id="Norte">
+                <regnombre>Norte</regnombre>
+                <trimestres>
+                    <trimestre id="1">
+                        <num>1</num>
+                        <libros_vendidos cantidad="24000">24000</libros_vendidos>
+                    </trimestre>
+                    <trimestre id="2">
+                        <num>2</num>
+                        <libros_vendidos cantidad="38600">38600</libros_vendidos>
+                    </trimestre>
+                    <trimestre id="3">
+                        <num>3</num>
+                        <libros_vendidos/>
+                    </trimestre>
+                    <trimestre id="4">
+                        <num>4</num>
+                        <libros_vendidos/>
+                    </trimestre>
+                </trimestres>
+            </region>
+            <region id="Centro">
+                <regnombre>Centro</regnombre>
+                <trimestres>
+                    <trimestre id="1">
+                        <num>1</num>
+                        <libros_vendidos/>
+                    </trimestre>
+                    <trimestre id="2">
+                        <num>2</num>
+                        <libros_vendidos cantidad="16080">16080</libros_vendidos>
+                    </trimestre>
+                    <trimestre id="3">
+                        <num>3</num>
+                        <libros_vendidos cantidad="25000">25000</libros_vendidos>
+                    </trimestre>
+                    <trimestre id="4">
+                        <num>4</num>
+                        <libros_vendidos cantidad="29000">29000</libros_vendidos>
+                    </trimestre>
+                </trimestres>
+            </region>
+            <region id="Sur">
+                <regnombre>Sur</regnombre>
+                <trimestres>
+                    <trimestre id="1">
+                        <num>1</num>
+                        <libros_vendidos cantidad="27000">27000</libros_vendidos>
+                    </trimestre>
+                    <trimestre id="2">
+                        <num>2</num>
+                        <libros_vendidos cantidad="31400">31400</libros_vendidos>
+                    </trimestre>
+                    <trimestre id="3">
+                        <num>3</num>
+                        <libros_vendidos cantidad="40100">40100</libros_vendidos>
+                    </trimestre>
+                    <trimestre id="4">
+                        <num>4</num>
+                        <libros_vendidos cantidad="30000">30000</libros_vendidos>
+                    </trimestre>
+                </trimestres>
+            </region>
+        </ventas>
+    </body>
+</editorial>

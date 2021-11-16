@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+        <!ELEMENT editorial (head, body)>
+        <!ELEMENT head (nombre, titulo, descripcion, fecha+)>
+        <!ELEMENT nombre (#PCDATA)>
+        <!ELEMENT titulo (#PCDATA)>
+        <!ELEMENT descripcion (#PCDATA)>
+        <!ELEMENT fecha (#PCDATA)>
+        <!ATTLIST fecha date CDATA #REQUIRED>
+        <!ELEMENT body (ventas)?>
+        <!ELEMENT ventas (region)+>
+        <!ELEMENT region (regnombre, trimestres)+>
+        <!ATTLIST region id (Norte | Centro | Sur) #REQUIRED>
+        <!ELEMENT regnombre (#PCDATA)>
+        <!ELEMENT trimestres (trimestre)+>
+        <!ELEMENT trimestre (num, libros_vendidos)>
+        <!ELEMENT num (#PCDATA)>
+        <!ATTLIST trimestre id (1 | 2 | 3 | 4) #REQUIRED>
+        <!ELEMENT libros_vendidos (#PCDATA)>
+        <!ATTLIST libros_vendidos cantidad CDATA #IMPLIED>

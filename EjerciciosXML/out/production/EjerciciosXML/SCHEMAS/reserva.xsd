@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+            xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            xmlns="http://www.yisus.net/reserva"
+            targetNamespace="http://www.yisus.net/reserva">
+  <xsd:element name="reserva" type="reservaType"/>
+  <xsd:complexType name="residenteType">
+    <xsd:sequence>
+      <xsd:element name="nombres" type="xsd:string"/>
+      <xsd:element name="apellido" type="xsd:string"/>
+      <xsd:element name="pasaporte">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:integer">
+            <xsd:pattern value="[0-9]{6}"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+      <xsd:element name="nacionalidad">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[A-Z][A-Z]"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:attribute type="xsd:boolean" name="responsable" use="optional"/>
+  </xsd:complexType>
+  <xsd:complexType name="residentesType">
+    <xsd:sequence>
+      <xsd:element type="residenteType" name="residente" maxOccurs="unbounded" minOccurs="0"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="habitacionType">
+    <xsd:sequence>
+      <xsd:element type="xsd:date" name="desde"/>
+      <xsd:element type="xsd:date" name="hasta"/>
+      <xsd:element type="residentesType" name="residentes"/>
+    </xsd:sequence>
+    <xsd:attribute type="xsd:integer" name="numero"/>
+  </xsd:complexType>
+  <xsd:complexType name="habitacionesType">
+    <xsd:sequence>
+      <xsd:element type="habitacionType" name="habitacion"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="tarjeta_creditoType">
+    <xsd:sequence>
+      <xsd:element type="xsd:string" name="tipo"/>
+      <xsd:element name="numero">
+        <xsd:simpleType>
+          <xsd:restriction base="xsd:string">
+            <xsd:length value="14"/>
+          </xsd:restriction>
+        </xsd:simpleType>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="mediopagoType">
+    <xsd:sequence>
+      <xsd:element type="tarjeta_creditoType" name="tarjeta_credito"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="reservaType">
+    <xsd:sequence>
+      <xsd:element type="habitacionesType" name="habitaciones"/>
+      <xsd:element type="mediopagoType" name="mediopago"/>
+    </xsd:sequence>
+    <xsd:attribute type="xsd:integer" name="version"/>
+  </xsd:complexType>
+</xsd:schema>

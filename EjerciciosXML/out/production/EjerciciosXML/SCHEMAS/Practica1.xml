@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<reserva version="1" xmlns="http://www.yisus.net/reserva" xmlns:xsd="http://www.w3.org/2001/XMLSchema-instance" xsd:schemaLocation="http://www.yisus.net/reserva reserva.xsd">
+    <habitaciones>
+        <habitacion numero="202">
+            <desde>2009-11-22</desde>
+            <hasta>2009-11-24</hasta>
+            <residentes>
+                <residente responsable="true">
+                    <nombres>Pedro</nombres>
+                    <apellido>Camacho</apellido>
+                    <pasaporte>552321</pasaporte>
+                    <nacionalidad>PE</nacionalidad>
+                </residente>
+                <residente>
+                    <nombres>Julia</nombres>
+                    <apellido>Urquidi</apellido>
+                    <pasaporte>664423</pasaporte>
+                    <nacionalidad>BO</nacionalidad>
+                </residente>
+            </residentes>
+        </habitacion>
+    </habitaciones>
+    <mediopago>
+        <tarjeta_credito>
+            <tipo>AMEX</tipo>
+            <numero>38822050023042</numero>
+        </tarjeta_credito>
+    </mediopago>
+</reserva>

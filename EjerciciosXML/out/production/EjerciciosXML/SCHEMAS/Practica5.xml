@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<catalogoLibro xmlns="http://www.yisus.net/xml" xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:schemaLocation="http://www.yisus.net/xml catalogo_libros.xsd">
+    <libro categoria="Ficcion" enstock="true" revisor="">
+        <titulo>Los hombres que no amaban a las mujeres</titulo>
+        <autor>Stieg Larsson</autor>
+        <fecha>
+            <anyo>2008</anyo>
+        </fecha>
+        <ISBN>978-84-233-4044-6</ISBN>
+        <editor>Destino</editor>
+    </libro>
+    <libro categoria="No ficcion" enstock="false" revisor="Luis Rodrigo">
+        <titulo>Java a traves de ejemplos</titulo>
+        <autor>Jesus Bobadilla</autor>
+        <autor>Adela Sancho</autor>
+        <fecha>
+            <mes>1</mes>
+            <anyo>2003</anyo>
+        </fecha>
+        <ISBN>84-7897-549-7</ISBN>
+        <editor>Ra-Ma</editor>
+    </libro>
+</catalogoLibro>

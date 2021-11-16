@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified"
+           xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns="http://www.yisus.net/xml"
+           targetNamespace="http://www.yisus.net/xml">
+  <xs:element name="persona" type="tipoPersona"/>
+  <xs:complexType name="info">
+    <xs:sequence>
+      <xs:element type="xs:string" name="nombre"/>
+      <xs:element type="xs:string" name="apellidos"/>
+      <xs:element type="xs:string" name="dni"/>
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="tipoPersona">
+    <xs:sequence>
+      <xs:element type="info" name="datos"/>
+      <xs:element type="xs:string" name="comentario" minOccurs="0" maxOccurs="1"/>
+    </xs:sequence>
+    <xs:attribute type="xs:date" name="nacimiento" use="required"/>
+  </xs:complexType>
+</xs:schema>
