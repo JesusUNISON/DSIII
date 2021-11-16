@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="windows-1252" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2021-09-06T18:48:45.390533200Z</date>
+  <millis>1630954125390</millis>
+  <nanos>533200</nanos>
+  <sequence>999</sequence>
+  <logger>LoggingConfiguration</logger>
+  <level>INFO</level>
+  <class>LoggingConfiguration</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Msg999</message>
+</record>
+<record>
+  <date>2021-09-06T18:48:45.390533200Z</date>
+  <millis>1630954125390</millis>
+  <nanos>533200</nanos>
+  <sequence>1000</sequence>
+  <logger>LoggingConfiguration</logger>
+  <level>CONFIG</level>
+  <class>LoggingConfiguration</class>
+  <method>main</method>
+  <thread>1</thread>
+  <message>Config data</message>
+</record>
+</log>

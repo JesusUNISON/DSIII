@@ -1,0 +1,16 @@
+sep 06, 2021 11:43:26 A. M. LoggingDemo02 main
+DETALLADO: FINE
+sep 06, 2021 11:43:27 A. M. LoggingDemo02 main
+INFORMACIÓN: INICIO
+sep 06, 2021 11:43:27 A. M. LoggingDemo02 main
+ADVERTENCIA: WARNING
+sep 06, 2021 11:43:27 A. M. LoggingDemo02 main
+GRAVE: SEVERE
+sep 06, 2021 11:43:27 A. M. LoggingDemo02 doIt
+INFORMACIÓN: INICIO
+sep 06, 2021 11:43:27 A. M. LoggingDemo02 doIt
+GRAVE: Error: For input string: "123k"
+sep 06, 2021 11:43:27 A. M. LoggingDemo02 doIt
+INFORMACIÓN: FIN
+sep 06, 2021 11:43:27 A. M. LoggingDemo02 main
+INFORMACIÓN: FIN
